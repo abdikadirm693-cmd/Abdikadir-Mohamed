@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>SOMPLAY - Somali Game Top-Up</title>
+    <meta name="description" content="Somalia's premier mobile game top-up platform for PUBG Mobile UC with EVC Plus, Zaad, Sahal, and eDahab payments." />
+    <meta property="og:title" content="SOMPLAY - Somali Game Top-Up" />
+    <meta property="og:description" content="Somalia's premier mobile game top-up platform for PUBG Mobile UC with EVC Plus, Zaad, Sahal, and eDahab payments." />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#DC2626" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <script>
+      // Suppress benign Vite dev-server HMR WebSocket rejection in iframe preview environment
+      window.addEventListener('unhandledrejection', function (event) {
+        var reason = event.reason;
+        var msg = reason && (reason.message || String(reason));
+        var stack = reason && (reason.stack || '');
+        if (
+          msg === 'WebSocket closed without opened.' ||
+          (typeof msg === 'string' && (msg.includes('WebSocket') || msg.includes('ws://') || msg.includes('wss://'))) ||
+          stack.includes('@vite/client')
+        ) {
+          event.preventDefault();
+          event.stopPropagation();
+          return false;
+        }
+      }, true);
+      window.addEventListener('error', function (event) {
+        var filename = event.filename || '';
+        var msg = event.message || '';
+        if (
+          filename.includes('@vite/client') ||
+          (typeof msg === 'string' && (msg.includes('WebSocket') || msg.includes('ws://') || msg.includes('wss://')))
+        ) {
+          event.preventDefault();
+          event.stopPropagation();
+          return false;
+        }
+      }, true);
+    </script>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased selection:bg-red-500 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

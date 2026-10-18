@@ -1,0 +1,6 @@
+{
+  "name": "SOMPLAY - Somali Game Top-Up",
+  "description": "Somalia's premier mobile game top-up platform for PUBG Mobile UC with EVC Plus, Zaad, Sahal, and eDahab payments.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
